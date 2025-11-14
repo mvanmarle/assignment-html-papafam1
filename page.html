@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dado Tea Lunch Special</title>
+    <style>
+      body {
+        font-family: "Gill Sans", Arial, sans-serif;
+        margin: 20px;
+      }
+
+      fieldset {
+        border: 1px solid #000;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+      }
+
+      legend {
+        font-weight: 600;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .day-title {
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .inline-label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dado Tea Lunch Special</h1>
+    <p>
+      Monday through Friday<br />
+      11am &mdash; 3pm<br />
+      $9.95 plus tax
+    </p>
+    <p>Includes sandwich, snack, and drink.</p>
+
+    <form>
+      <fieldset>
+        <legend>Order Information</legend>
+        <label>
+          Name<br />
+          <input type="text" name="customer-name" />
+        </label>
+        <label class="inline-label">
+          <input type="radio" name="dining-option" value="here" /> Here
+        </label>
+        <label class="inline-label">
+          <input type="radio" name="dining-option" value="togo" /> To Go
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sandwiches</legend>
+        <div class="day-title">Monday</div>
+        <label>
+          <input
+            type="radio"
+            name="monday-sandwich"
+            value="tomato-mozzarella"
+          />
+          Tomato Mozzarella
+        </label>
+        <label>
+          <input type="radio" name="monday-sandwich" value="chicken-salad" />
+          Chicken Salad
+        </label>
+
+        <div class="day-title">Tuesday</div>
+        <label>
+          <input
+            type="radio"
+            name="tuesday-sandwich"
+            value="greek-salad-wrap"
+          />
+          Greek Salad Wrap
+        </label>
+        <label>
+          <input type="radio" name="tuesday-sandwich" value="tuna-wrap" />
+          Tuna Wrap
+        </label>
+
+        <div class="day-title">Wednesday</div>
+        <label>
+          <input
+            type="radio"
+            name="wednesday-sandwich"
+            value="red-pepper-hummus"
+          />
+          Red Pepper Hummus
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="wednesday-sandwich"
+            value="roasted-turkey"
+          />
+          Roasted Turkey
+        </label>
+
+        <div class="day-title">Thursday</div>
+        <label>
+          <input
+            type="radio"
+            name="thursday-sandwich"
+            value="carrot-ginger-wrap"
+          />
+          Carrot-Ginger Hummus Wrap
+        </label>
+        <label>
+          <input type="radio" name="thursday-sandwich" value="egg-salad" />
+          Egg Salad
+        </label>
+
+        <div class="day-title">Friday</div>
+        <label>
+          <input type="radio" name="friday-sandwich" value="dado-wrap" />
+          Dado Wrap
+        </label>
+        <label>
+          <input type="radio" name="friday-sandwich" value="tuna-salad" />
+          Tuna Salad
+        </label>
+
+        <label>
+          <input type="checkbox" name="gluten-free" value="yes" />
+          Gluten Free Bread (75¢ extra)
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Snack</legend>
+        <label>
+          <input type="radio" name="snack" value="apple" />
+          Apple
+        </label>
+        <label>
+          <input type="radio" name="snack" value="banana" />
+          Banana
+        </label>
+        <label>
+          <input type="radio" name="snack" value="potato-chips" />
+          Potato Chips
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Drink</legend>
+        <label for="drink-select">Drinks</label>
+        <select id="drink-select" name="drink">
+          <option>Hot Black Tea - Rooibos</option>
+          <option>Hot Black Tea - Keemun</option>
+          <option>Hot Green Tea - Sencha</option>
+          <option>Iced Jasmine Green Tea</option>
+          <option>Orange Juice</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="large-drink" value="yes" />
+          Large drink (75¢ extra)
+        </label>
+      </fieldset>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
